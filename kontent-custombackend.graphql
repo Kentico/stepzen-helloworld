@@ -2,7 +2,7 @@ type ContentItemBackend implements ContentItem {
 }
 
 type Query {
-  ContentItemByCodename(codename: string!): ContentItemBackend
+  ContentItemByCodename(codename: String!): ContentItemBackend
       @supplies(query: "item")
-      @rest(endpoint:"https://deliver.kontent.ai/975bf280-fd91-488c-994c-2f04416e5ee3/items", configuration: "custom_config")
+      @rest(endpoint:"https://deliver.kontent.ai/975bf280-fd91-488c-994c-2f04416e5ee3/items")
 }

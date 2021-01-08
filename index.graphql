@@ -1,0 +1,4 @@
+schema
+ @sdl(files: ["kontent.graphql", "kontent-custombackend.graphql"]) {
+ query: Query
+}

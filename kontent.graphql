@@ -5,7 +5,7 @@ interface ContentItemSystemElements {
   language: String!
   type: String!
   collection: String!
-  sitemap_locations: [String]
+  # sitemap_locations: [String] # [{"message":"Bad Request: Fields with type list of scaler ([String]) are not supported - Field: ContentItemSystemElements.sitemap_locations File: kontent.graphql","locations":[]}]
   last_modified: Date!
 }
 

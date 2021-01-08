@@ -1,0 +1,24 @@
+interface ContentItemSystemElements {
+  id: String!
+  name: String
+  codename: String!
+  language: String!
+  type: String!
+  collection: String!
+  sitemap_locations: [String]
+  last_modified: Date!
+}
+
+interface ContentItem {
+  system: ContentItemSystemElements!
+}
+
+type Query {
+  item(codename: String!): ContentItem,
+  # items: [ContentItem],
+  # items-feed - impossible? https://docs.kontent.ai/reference/delivery-api#operation/enumerate-content-items
+  # itemsByType(type: String!, limit: Int, depth: Int, order: String): [ContentItem]
+  # filtering operators? https://docs.kontent.ai/reference/delivery-api#tag/Filtering-content/filtering-operators
+  # projection https://docs.kontent.ai/reference/delivery-api#tag/Projection
+}
+

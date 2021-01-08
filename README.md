@@ -10,5 +10,3 @@ I tried to map these Kontent Delivery REST endpoints via StepZen GraphQl endpoin
 * [List of content items](https://docs.kontent.ai/reference/delivery-api#operation/list-content-items)
   * including [Filtering content operators](https://docs.kontent.ai/reference/delivery-api#tag/Filtering-content/filtering-operators)
   * including [Projection](https://docs.kontent.ai/reference/delivery-api#tag/Projection)
-
-N
